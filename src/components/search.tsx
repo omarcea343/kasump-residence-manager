@@ -11,25 +11,27 @@ import { Input } from "@/components/ui/input";
 
 export function Search() {
   return (
-    <Card className="w-[500px] flex-col flex ">
-      <CardHeader>
-        <CardTitle>Kasump Residence Manager</CardTitle>
-        <CardDescription>
-          Ingrese el numero de casa para buscar.
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <form>
-          <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-              <Input id="number" placeholder="Numero" />
+    <div className="pt-[20%] flex justify-center ">
+      <Card className="w-[500px]">
+        <CardHeader>
+          <CardTitle>Kasump Residence Manager</CardTitle>
+          <CardDescription>
+            Ingrese el numero de casa para buscar.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <form>
+            <div className="grid w-full items-center gap-4">
+              <div className="flex flex-col space-y-1.5">
+                <Input id="number" placeholder="Numero" />
+              </div>
             </div>
-          </div>
-        </form>
-      </CardContent>
-      <CardFooter className="flex justify-center">
-        <Button>Buscar</Button>
-      </CardFooter>
-    </Card>
+          </form>
+        </CardContent>
+        <CardFooter className="flex justify-center">
+          <Button>Buscar</Button>
+        </CardFooter>
+      </Card>
+    </div>
   );
 }
