@@ -1,7 +1,11 @@
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+
 export const Search = () => {
   return (
     <div>
-      <h1>Search</h1>
+      <Input placeholder="Ingresa Numero" />
+      <Button>Buscar</Button>
     </div>
   );
 };
